@@ -29,5 +29,17 @@ for name in movies:
     find.send_keys(name)
     find = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a.ipc-metadata-list-summary-item__t")))
     find.click()
+
+wb = Workbook()
+ws = wb.active
+ws["A1"] = "Movie title"
+ws["B1"] = "Year"
+ws["C1"] = "Length"
+ws["D1"] = "Rating"
+ws["E1"] = "Popularity"
+ws["F1"] = "Actors"
+ws["G1"] = "Director"
+ws["H1"] = "Description"
+wb.save("movies.xlsx")
     
 input()
