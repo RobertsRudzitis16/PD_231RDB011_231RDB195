@@ -24,9 +24,20 @@ time.sleep(3)
 find = driver.find_element(By.XPATH, '//*[@id="__next"]/div/div/div[2]/div/button[2]')
 find.click()
 
-list = []
 
-for name in movies:
+wb = Workbook()
+ws = wb.active
+max_row=ws.max_row
+ws["A1"] = "Movie title"
+ws["B1"] = "Year"
+ws["C1"] = "Length"
+ws["D1"] = "Rating"
+ws["E1"] = "Popularity"
+ws["F1"] = "Actors"
+ws["G1"] = "Director"
+ws["H1"] = "Description"
+
+for name in movies[:3]:
     find = WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.ID, "suggestion-search")))
     find.send_keys(name)
     find = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a.ipc-metadata-list-summary-item__t")))
@@ -48,18 +59,10 @@ for name in movies:
     director = director_element.text
     description = description_element.text
 
-    list.append([year, length, rating, popularity, actor, director, description])
+    ws.append([name, year, length, rating, popularity, actor, director, description])
 
-wb = Workbook()
-ws = wb.active
-ws["A1"] = "Movie title"
-ws["B1"] = "Year"
-ws["C1"] = "Length"
-ws["D1"] = "Rating"
-ws["E1"] = "Popularity"
-ws["F1"] = "Actors"
-ws["G1"] = "Director"
-ws["H1"] = "Description"
-wb.save("movies.xlsx")
-    
+
+
+
+wb.save("movies.xlsx")    
 input()
