@@ -6,18 +6,19 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from openpyxl import Workbook, load_workbook 
+import pandas as pd
 
 print("Izvēlieties filmu saraksta kārtošanas metodi:")
 print("1. Pēc reitinga")
 print("2. Pēc gada")
 print("3. Pēc popularitātes")
 print("4. Pēc filmas garuma")
-method = input("Ievadiet kārtošanas metodes numuru: ")
+method = int(input("Ievadiet kārtošanas metodes numuru: "))
 print()
 print("Izvēlieties filmu saraksta kārtošanas virzienu:")
 print("1. Augošā secībā")
 print("2. Dilstošā secībā")
-order = input("Ievadiet kārtošanas virziena numuru:")
+order = int(input("Ievadiet kārtošanas virziena numuru: "))
 
 movies=[]
 
@@ -48,6 +49,8 @@ ws["F1"] = "Actors"
 ws["G1"] = "Director"
 ws["H1"] = "Description"
 
+data=[]
+
 for name in movies[:3]:
     find = WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.ID, "suggestion-search")))
     find.send_keys(name)
@@ -70,7 +73,27 @@ for name in movies[:3]:
     director = director_element.text
     description = description_element.text
 
-    ws.append([name, year, length, rating, popularity, actor, director, description])
+    ws.append([name, f"'{year}", length, rating, popularity, actor, director, description])
 
-wb.save("movies.xlsx")    
+
+
+wb.save("movies.xlsx")  
+
+df=pd.read_excel("movies.xlsx")
+if method == 1:
+    sort = "Rating"
+elif method == 2:
+    sort = "Year"
+elif method == 3:
+    sort = "Popularity"
+elif method == 4:
+    sort = "Length"
+
+if order == 1:
+     df_sorted=df.sort_values(by=sort, ascending=True)   
+elif order == 2:
+    df_sorted=df.sort_values(by=sort, ascending=False)
+
+df_sorted.to_excel("movies_sorted.xlsx", index=False)
+
 input()
