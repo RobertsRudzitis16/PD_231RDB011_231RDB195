@@ -7,9 +7,17 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from openpyxl import Workbook, load_workbook 
 
-service = Service()
-option = webdriver.ChromeOptions()
-driver = webdriver.Chrome(service=service, options=option)
+print("Izvēlieties filmu saraksta kārtošanas metodi:")
+print("1. Pēc reitinga")
+print("2. Pēc gada")
+print("3. Pēc popularitātes")
+print("4. Pēc filmas garuma")
+method = input("Ievadiet kārtošanas metodes numuru: ")
+print()
+print("Izvēlieties filmu saraksta kārtošanas virzienu:")
+print("1. Augošā secībā")
+print("2. Dilstošā secībā")
+order = input("Ievadiet kārtošanas virziena numuru:")
 
 movies=[]
 
@@ -18,12 +26,15 @@ with open("movie_list.csv", "r", encoding="utf-8") as file:
     for line in file:
         movies.append(line)
 
+service = Service()
+option = webdriver.ChromeOptions()
+driver = webdriver.Chrome(service=service, options=option)
+
 url = "https://www.imdb.com/"
 driver.get(url)
 time.sleep(3)
 find = driver.find_element(By.XPATH, '//*[@id="__next"]/div/div/div[2]/div/button[2]')
 find.click()
-
 
 wb = Workbook()
 ws = wb.active
@@ -60,9 +71,6 @@ for name in movies[:3]:
     description = description_element.text
 
     ws.append([name, year, length, rating, popularity, actor, director, description])
-
-
-
 
 wb.save("movies.xlsx")    
 input()
