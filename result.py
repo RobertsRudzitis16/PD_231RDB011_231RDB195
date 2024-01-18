@@ -19,6 +19,12 @@ def find_popularity(p):
         number *= 1000000
     return number
 
+def find_length(l):
+    l.rstrip()
+    if len(l) == 5:
+        l = l[:3] + "0" + l[3:]
+    return l
+
 print("Izvēlieties filmu saraksta kārtošanas metodi:")
 print("1. Pēc reitinga")
 print("2. Pēc gada")
@@ -91,7 +97,7 @@ for line in movies:
         rating = rating_element.text
         year = year_element.text
         popularity = find_popularity(popularity_element.text)
-        length = length_element.text
+        length = find_length(length_element.text)
         actors = f"{actor1_element.text}, {actor2_element.text}, {actor3_element.text}"
         director = director_element.text
         description = description_element.text
