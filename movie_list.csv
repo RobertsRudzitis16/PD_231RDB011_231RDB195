@@ -1,200 +1,99 @@
-Film
-Alice in Wonderland
-(500) Days of Summer
-The Silence of the Lambs
-Amsterdam
-RocknRolla
-Home Alone 2: Lost in New York
-Up
-Reservoir Dogs
-Scent of a Woman
-Groundhog Day
-Schindler's List
-Spider-Man: No Way Home
-Nope
-Forrest Gump
-The Lion King
-Léon
-Pulp Fiction
-The Shawshank Redemption
-The Northman
-The Hangover
-House of Gucci
-Scream
-Licorice Pizza
-Don't Look Up
-Shutter Island
-Se7en
-Toy Story
-Dune: Part One
-Scream
-Trainspotting
-The Game
-Good Will Hunting
-Scream 2
-Harry Potter and the Deathly Hallows - Part 2
-Titanic
-Toy Story 2
-American History X
-The Green Mile
-The Lord of the Rings: The Fellowship of the Ring
-Cars 2
-Beautiful Boy
-Iron Man 2
-Bullet Train
-Shrek
-Scream 4
-Easy A
-The Social Network
-Despicable Me
-The Great Gatsby
-See How They Run
-Fight Club
-Inception
-Prisoners
-Ticket to Paradise
-American Psycho
-Monsters University
-Spider-Man
-10 Things I Hate About You
-The Lego Movie
-Fall
-The Girl with the Dragon Tattoo
-Pâfekuto burû
-Maleficent
-The Big Short
-Friends with Benefits
-American Pie
-Project X
-The Revenant
-The Lord of the Rings: The Return of the King
-The Lord of the Rings: The Two Towers
-Intouchables
-Despicable Me 2
-American Beauty
-We're the Millers
-Scary Movie
-Wreck-It Ralph
-Her
-Django Unchained
-The Amazing Spider-Man 2
-The Batman
-Spotlight
-Miss Peregrine's Home for Peculiar Children
-Ford v Ferrari
-Final Destination
-Rush
-Toy Story 4
-Neighbors
-Snatch
-Inside Out
-Le fabuleux destin d'Amélie Poulain
-Big Hero 6
-Spider-Man: Homecoming
-Gone Girl
-The Grand Budapest Hotel
-Minions
-Frozen
-Coco
-Ocean's Eleven
-Harry Potter and the Sorcerer's Stone
-Panic Room
-Jojo Rabbit
-Koto no ha no niwa
-Catch Me If You Can
-Kill Bill: Vol. 1
-Zootopia
-Harry Potter and the Chamber of Secrets
-Batman v Superman: Dawn of Justice
-The Ring
-Shrek 2
-Harry Potter and the Prisoner of Azkaban
-Final Destination 2
-Spider-Man 2
-Cars
-The Incredibles
-Fantastic Beasts and Where to Find Them
-Little Women
-Harry Potter and the Goblet of Fire
-The Aviator
-The Hateful Eight
-Hauru no ugoku shiro
-Ocean's Twelve
-Madagascar
-Moana
-Cars 3
-Incredibles 2
-Inglourious Basterds
-Shaun of the Dead
-Charlie and the Chocolate Factory
-Elvis
-Batman Begins
-Harry Potter and the Order of the Phoenix
-Mean Girls
-Kill Bill: Vol. 2
-La La Land
-The Nice Guys
-Ratatouille
-Bolt
-Tangled
-The Departed
-Fantastic Beasts: The Crimes of Grindelwald
-Fantastic Beasts: The Secrets of Dumbledore
-Spider-Man 3
-Harry Potter and the Half-Blood Prince
-The Curious Case of Benjamin Button
-The VVitch: A New-England Folktale
-Toy Story 3
-Zodiac
-Scott Pilgrim vs. the World
-Blood Diamond
-Spider-Man: Into the Spider-Verse
-Juno
-The Dark Knight
-The Prestige
-Lady Bird
-Ocean's Thirteen
-Avatar
-Get Out
-Ocean's Eight
-Happy Death Day
-Kimi no na wa.
-Koe no katachi
-Psycho
-Call Me by Your Name
-Ralph Breaks the Internet
-The Lion King
-Spider-Man: Far from Home
-Everything Everywhere All at Once
-Gisaengchung
-Green Book
-Once Upon a Time in... Hollywood
-A Rainy Day in New York
-The Black Phone
-Joker
-Taxi Driver
-Grease
-Drive
-The Princess and the Frog
-In Bruges
-The Lighthouse
-Turning Red
-Happy Death Day 2 U
-Interstellar
-El hoyo
-Superbad
-The Gentlemen
-Hotel Transylvania
-Cloudy with a Chance of Meatballs
-The French Dispatch
-Back to the Future
-Knives Out
-WALL·E
-Harry Potter and the Deathly Hallows - Part 1
-Where the Crawdads Sing
-Tenki no ko
-The Amazing Spider-Man
-Back to the Future Part II
-Back to the Future Part III
-The Wolf of Wall Street
-Home Alone
+Film,Year
+Alice in Wonderland,2010
+(500) Days of Summer,2009
+The Silence of the Lambs,1991
+Amsterdam,2022
+RocknRolla,2008
+Home Alone 2: Lost in New York,1992
+Up,2009
+Reservoir Dogs,1992
+Scent of a Woman,1992
+Groundhog Day,1993
+Schindler's List,1993
+Spider-Man: No Way Home,2021
+Nope,2022
+Forrest Gump,1994
+Léon,1994
+Pulp Fiction,1994
+The Shawshank Redemption,1994
+The Northman,2022
+The Hangover,2009
+House of Gucci,2021
+Scream,2022
+Licorice Pizza,2021
+Don't Look Up,2021
+Shutter Island,2010
+Se7en,1995
+Toy Story,1995
+Dune: Part One,2021
+Scream,1996
+Trainspotting,1996
+The Game,1997
+Good Will Hunting,1997
+Scream 2,1997
+Harry Potter and the Deathly Hallows - Part 2,2011
+Titanic,1997
+Toy Story 2,1999
+American History X,1998
+The Green Mile,1999
+The Lord of the Rings: The Fellowship of the Ring,2001
+Cars 2,2011
+Beautiful Boy,2018
+Iron Man 2,2010
+Bullet Train,2022
+Shrek,2001
+Scream 4,2011
+Easy A,2010
+The Social Network,2010
+Despicable Me,2010
+The Great Gatsby,2013
+See How They Run,2022
+Fight Club,1999
+Inception,2010
+Prisoners,2013
+Ticket to Paradise,2022
+American Psycho,2000
+Monsters University,2013
+Spider-Man,2002
+10 Things I Hate About You,1999
+The Lego Movie,2014
+Fall,2022
+The Girl with the Dragon Tattoo,2011
+Maleficent,2014
+The Big Short,2015
+Friends with Benefits,2011
+American Pie,1999
+Project X,2012
+The Revenant,2015
+The Lord of the Rings: The Return of the King,2003
+The Lord of the Rings: The Two Towers,2002
+Intouchables,2011
+Despicable Me 2,2013
+American Beauty,1999
+We're the Millers,2013
+Scary Movie,2000
+Wreck-It Ralph,2012
+Her,2013
+Django Unchained,2012
+The Amazing Spider-Man 2,2014
+The Batman,2022
+Spotlight,2015
+Miss Peregrine's Home for Peculiar Children,2016
+Ford v Ferrari,2019
+Final Destination,2000
+Rush,2013
+Toy Story 4,2019
+Neighbors,2014
+Snatch,2000
+Inside Out,2015
+Le fabuleux destin d'Amélie Poulain,2001
+Big Hero 6,2014
+Spider-Man: Homecoming,2017
+Gone Girl,2014
+The Grand Budapest Hotel,2014
+Minions,2015
+Frozen,2013
+Coco,2017
+Ocean's Eleven,2001
+Harry Potter and the Sorcerer's Stone,2001
+Panic Room,2002
